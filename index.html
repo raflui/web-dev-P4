@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Adri’s Guitar Shop - Home">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adri’s Guitar Shop</title>
+
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #fff3e6; }
+        header nav { background: #d96c00; padding: 15px; color: white; display: flex; justify-content: space-between; }
+        nav a { color: white; text-decoration: none; margin-left: 15px; font-weight: bold; }
+        .container { padding: 40px; }
+        h1, h2 { color: #d96c00; }
+        footer { background: #d96c00; color: white; text-align: center; padding: 10px; margin-top: 30px; }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h1>Adri’s Guitar Shop</h1>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="products.html">Guitars</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <h2 id="greeting"></h2>
+    <p>Welcome to Adri’s Guitar Shop! Discover quality guitars perfect for beginners, hobbyists, and professionals.</p>
+
+    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d"
+         style="width:100%; border-radius:10px;">
+</div>
+
+<footer>
+    © 2025 Adri’s Guitar Shop
+</footer>
+
+<script>
+    const hour = new Date().getHours();
+    const greeting = document.getElementById("greeting");
+    if (hour < 12) greeting.textContent = "Good Morning!";
+    else if (hour < 18) greeting.textContent = "Good Afternoon!";
+    else greeting.textContent = "Good Evening!";
+</script>
+
+</body>
+</html>
